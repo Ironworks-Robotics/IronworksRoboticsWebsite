@@ -1,3 +1,5 @@
+/* unuesed file */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -207,8 +209,9 @@
     grid-template-columns: 1 1;
     align-items: center;
     margin: auto;
-	display: block;
+	display: flex;
   justify-content: space-between;
+    height: 110vh;
     z-index: 1;
     max-width: 60%;
 	height: auto;
@@ -257,39 +260,30 @@
 }
 
 .main__content h3 {
-    margin-top: 4rem;
+    margin-top: 5rem;
     font-size: 2.4rem;
     font-weight: 700;
-    color: gold;
-	margin-left: 0rem;
+	 background-image: linear-gradient(to top, #14274E 1%, #9BA4B4 100%);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color:#000000;
+	margin-right: 35rem;
 }
 
 .main__content h4 {
-    margin-top: 4rem;
+    margin-top: 6rem;
     font-size: 2.4rem;
     font-weight: 700;
-    color:gold;
-	margin-left: 0rem;
+	 background-image: linear-gradient(to top, #14274E 1%, #9BA4B4 100%);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color:#000000;
+	margin-left: 57rem;
 }
-
-.main__content h10 {
-    margin-top: 40rem;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color:gold;
-	margin-left: 0rem;
-}
-
-
-.main__content h7 {
-    margin-top: 2rem;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: black;
-	margin-left: 32rem;
-}
-
-
 
 .main__content h6 {
     margin-top: 6rem;
@@ -304,46 +298,22 @@
 	margin-left: 45rem;
 }
 
-.main__content h27 {
-    margin-top: .2rem;
-    font-size: 1.8rem;
+.main__content h5 {
+    margin-top: .5rem;
+    font-size: 1.2rem;
     font-weight: 100;
-    color:#9BA4B4;
-	text-decoration: underline;
+    color:#000000;
+	margin-left: 33.5rem;
 }
 
 .main__content p {
     margin-top: 1rem;
-	padding-left: 0rem;
     font-size: 1.2rem;
     font-weight: 1;
     color:#000000;
+	margin-right: 29rem;
 }
 
-.resources {
-   display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: 70px auto;
-}
-
-.resourcesbutton {
-	margin-top: -60px; 
-	position: absolute;
-	text-align: center;
-	background-color:#14274E;
-    color: #fff;
-    border:none;
-	border-radius:10px; 
-	width: 1145px;
-	padding: 10px 0;
-	cursor: pointer;
-}
-
-.resourcesbutton:hover {
-	background-color:#9BA4B4;
-    transition: 0.5s;
-}
 
 .names {
 	height: 100vh;
@@ -513,17 +483,16 @@ padding-top: 10px;
 }
 
 .trans {
-background-image: url("images/2020/3.JPG");
-background-color: #383a3c;
-margin-top: 10px;
+background-image: url("images/DSC_0066.JPG");
 width: 100%;
+margin-top: 100px;
 display: table;
 max-width: 100%;
 height: 90vh;
 background-attachment: fixed;
-background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+background-size: cover;
 	
 }
 
@@ -536,31 +505,6 @@ font-size: 200px;
 color: white;	
 	
 }
-
-.resources {
-   display:flex;
-    justify-content: center;
-    align-items: center;
-    margin: 70px auto;
-}
-
-.resourcesbutton {
-	margin-top: -60px; 
-	position: absolute;
-	text-align: center;
-	background-color:#14274E;
-    color: #fff;
-    border:none;
-	border-radius:10px; 
-	width: 1145px;
-	padding: 10px 0;
-	cursor: pointer;
-}
-
-.resourcesbutton:hover {
-	background-color:#9BA4B4;
-	transition: 0.5s;}
-
 
 .history {
 	align-content: center
@@ -591,12 +535,11 @@ color: white;
 
 /* about Section CSS */
 .about {
-    margin-top: 100px;
-	background: #fff;
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 123vh;
+    height: 130vh;
 }
 
 .about h1 {
@@ -627,70 +570,19 @@ color: white;
 }
 
 .about__card {
-    margin: 2rem;
+    margin: 1rem;
     height: 480px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%);
+    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%) url("images/DSC_0066.JPG");
 	background-size: cover;
     position: relative;
     color: #e3e3e3;
     
 }
 
-.about__card:nth-child(4) {
-    margin: 1rem;
-    height: 480px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%), url("images/DSC_0066.JPG");
-	background-size: cover;
-    position: relative;
-    color: #e3e3e3;
-}
-
-.about__card:nth-child(2) {
-    margin: 1rem;
-    height: 480px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%), url("images/Screenshot 2022-08-19 115151.jpg");
-	background-size: cover;
-    position: relative;
-    color: #e3e3e3;
-}
-
-.about__card:nth-child(5) {
-    margin: 1rem;
-    height: 480px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%), url("images/Mortal Kombat 2.jpg");
-	background-size: cover;
-    position: relative;
-    color: #e3e3e3;
-}
-
-.about__card:nth-child(3) {
-    margin: 1rem;
-    height: 480px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%), url("images/image0.jpg");
-	background-size: cover;
-    position: relative;
-    color: #e3e3e3;
-}
-
 .about__card:nth-child(1) {
-    margin: 1rem;
-    height: 480px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%), url("images/image0.jpg");
-	background-size: cover;
-    position: relative;
-    color: #e3e3e3;
+	background-image: linear-gradient(to bottom, rgba(1,1,1,0.05) 0%, rgba(17,17,17,0.6) 100%);
 }
 
 .about h2 {
@@ -754,7 +646,6 @@ color: white;
 /* Footer CSS */
 .footer__container {
     background-color: #141414;
-	margin-top: 100px;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -879,119 +770,4 @@ color: white;
         padding: 10px;
         width: 100%;
     }
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1132px;
-  position: relative;
-  margin: auto;
-	padding-top: 10px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 17px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.slide {
-  animation-name: slide;
-  animation-duration: 1.5s;
-}
-
-@keyframes slide {
-    0% {
-      background-position: 0 0;
-    }
-    16.66% {
-      background-position: 0 0;
-    }
-    33.32% {
-      background-position: -800px 0;
-    }
-    49.98% {
-      background-position: -800px 0;
-    }
-    66.64% {
-      background-position: -1600px 0;
-    }
-    83.30% {
-      background-position: -1600px 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
 }
