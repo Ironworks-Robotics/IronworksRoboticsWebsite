@@ -17,18 +17,26 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.svg">
     <link rel="icon" type="image/x-icon" href="/images/logo.svg">
     <style>
+        a{
+            text-decoration: none;
+        }
         .imgPicker {
             width: 100%;
             font-size: 0;
-            text-align: center;
+            text-align: left;
+            background-color: black;
+            height: 10vw;
         }
 
         .imgPicker img {
             width: 12vw;
             display: none;
             cursor: pointer;
-            filter: brightness(0.5);
-            /*change javascript with this*/
+            filter: brightness(0.5);/*change javascript with this*/
+            
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
         }
 
         .guideArrows {
@@ -64,7 +72,17 @@
         }
 
         .hero {
-            text-align: center;
+            vertical-align: middle;
+            background-color: black;
+            height: 40vw;
+        }
+        .hero img{
+            display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
         }
 
         .fullgallery {
@@ -116,28 +134,31 @@
         <div class="hero guideArrows">
             <a class="prev" onclick="changeSlides(-1)">❮</a>
             <a class="next" onclick="changeSlides(1)">❯</a>
-            <img src="/images/DSC_0066.JPG" alt="" width="100%" id="heroImage" />
+            <span></span>
+            <img src="/images/Gallery/1.jpg" alt="" width="100%" id="heroImage" />
         </div>
 
         <!-- Image Picker -->
         <div class="imgPicker guideArrows">
             <a class="prev" onclick="scrollImages(-1)">❮</a>
             <a class="next" onclick="scrollImages(1)">❯</a>
-            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
-            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/1.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/2.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/3.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/4.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/5.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/6.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/7.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/8.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/9.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/10.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/11.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/12.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/13.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/15.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/16.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/17.jpg" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/Gallery/18.jpg" onclick="setImage(this)" />
         </div>
     </div>
     <!-- Footer Section -->
