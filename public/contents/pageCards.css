@@ -2,7 +2,7 @@
     margin: 0vw;
 }
 .pageCards>div{
-    padding: 0vw 5vw;
+    padding: 2vw 5vw;
 }
 
 .pageCards h2{
@@ -11,10 +11,12 @@
 }
 .pageCards p{
     font-size: 1.5em;
-    margin: 2em 0em 0em 0em;
 }
 .cardCol{
     height: 35vw;
+}
+.cardCol p{
+    margin: 2em 0em 0em 0em;
 }
 
 .cardCol img{
@@ -30,7 +32,7 @@
     margin-right: 4em; /*modify text distance*/
 }
 
-@media (max-width:1100px) {
+@media (max-width:1800px) {
     div.cardCol.cardCol img{
         float: none;
         height: auto;
@@ -45,6 +47,7 @@
 }
 
 .trippleColCard{
+    margin-top: 1em;
     text-align: center;
 }
 .trippleColCard div{
@@ -55,7 +58,10 @@
     width: 100%;
 }
 .trippleColCard h2{
-    padding: 1em 0em;
+    padding-bottom: 1em;
+}
+.trippleColCard p{
+    margin-bottom: 1em;
 }
 
 .seeMore{
