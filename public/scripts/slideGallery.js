@@ -48,4 +48,6 @@ function updateImages() {
                 images[curStartOfChain + index].style.display = "inline-block";
         }
 }
+window.onresize = updateImages;
+
 updateImages();
