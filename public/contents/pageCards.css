@@ -1,0 +1,68 @@
+.pageCards{
+    margin: 0vw;
+}
+.pageCards>div{
+    padding: 0vw 5vw;
+}
+
+.pageCards h2{
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+.pageCards p{
+    font-size: 1.5em;
+    margin: 2em 0em 0em 0em;
+}
+.cardCol{
+    height: 35vw;
+}
+
+.cardCol img{
+    height: 30vw;
+}
+.cardCol:nth-child(odd) img{
+    float:right;
+    margin-left: 4em; /*modify text distance*/
+}
+
+.cardCol:nth-child(even) img{
+    float:left; 
+    margin-right: 4em; /*modify text distance*/
+}
+
+@media (max-width:1100px) {
+    div.cardCol.cardCol img{
+        float: none;
+        height: auto;
+        width: 80vw;
+        margin: 0em;
+        text-align: center;
+    }
+    .cardCol{
+        height: auto;
+        padding: 0 2em;
+    }
+}
+
+.trippleColCard{
+    text-align: center;
+}
+.trippleColCard div{
+    width: 30%;
+    display: inline-block;
+}
+.trippleColCard img{
+    width: 100%;
+}
+.trippleColCard h2{
+    padding: 1em 0em;
+}
+
+.seeMore{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    margin: 1em 0em;
+}
