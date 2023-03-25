@@ -58,6 +58,7 @@
     .trippleColCard div{
         display: block;
         margin: auto;
+        width: 100%;
     }
 }
 .trippleColCard img{
