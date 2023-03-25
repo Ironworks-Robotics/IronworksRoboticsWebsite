@@ -10,56 +10,61 @@
     <link rel="stylesheet" href="/contents/pageCards.css">
     <link rel="stylesheet" href="/contents/footer.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <style>        
-        .imgPicker{
+    <style>
+        .imgPicker {
             width: 100%;
             font-size: 0;
             text-align: center;
         }
-        .imgPicker img{
+
+        .imgPicker img {
             width: 12vw;
             display: none;
             cursor: pointer;
-            filter: brightness(0.5); /*change javascript with this*/
+            filter: brightness(0.5);
+            /*change javascript with this*/
         }
-        .guideArrows{
+
+        .guideArrows {
             position: relative;
         }
+
         /* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -4.5vw; /* 0.75 the font size*/
-    padding: 0vw 2vw; /*no top padding*/
-    color: white;
-    font-weight: bold;
-    font-size: 6vw;
-    transition: 0.1s ease;
-    z-index: 10;
-}
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            margin-top: -4.5vw;
+            /* 0.75 the font size*/
+            padding: 0vw 2vw;
+            /*no top padding*/
+            color: white;
+            font-weight: bold;
+            font-size: 6vw;
+            transition: 0.1s ease;
+            z-index: 10;
+        }
 
 
-.next {
-    right: 0;
-}
+        .next {
+            right: 0;
+        }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
 
-.hero{
-    text-align: center;
-}
+        .hero {
+            text-align: center;
+        }
 
-.fullgallery{
-    width: 60vw;
-    margin: auto;
-}
-
+        .fullgallery {
+            width: 60vw;
+            margin: auto;
+        }
     </style>
     <script defer src="/scripts/slidegallery.js"></script>
 </head>
@@ -114,35 +119,35 @@
 
     <!-- Moved nav js to nav.js inside of scripts folder. Use this across site to access nav-->
     <script type="text/javascript" src="public/scripts/nav.js"></script>
-    <div class = "fullgallery">
-    <!-- Hero Section -->
-    <div class="hero guideArrows">
-        <a class="prev" onclick="changeSlides(-1)">❮</a>
-        <a class="next" onclick="changeSlides(1)">❯</a>
-        <img src="/images/DSC_0066.JPG" alt="" width="100%" id="heroImage"/>
-    </div>
+    <div class="fullgallery">
+        <!-- Hero Section -->
+        <div class="hero guideArrows">
+            <a class="prev" onclick="changeSlides(-1)">❮</a>
+            <a class="next" onclick="changeSlides(1)">❯</a>
+            <img src="/images/DSC_0066.JPG" alt="" width="100%" id="heroImage" />
+        </div>
 
-    <!-- Image Picker -->
-    <div class = "imgPicker guideArrows">
-        <a class="prev" onclick="scrollImages(-1)">❮</a>
-        <a class="next" onclick="scrollImages(1)">❯</a>
-        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
-        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
+        <!-- Image Picker -->
+        <div class="imgPicker guideArrows">
+            <a class="prev" onclick="scrollImages(-1)">❮</a>
+            <a class="next" onclick="scrollImages(1)">❯</a>
+            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0066.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0136.JPG" onclick="setImage(this)" />
+            <img class="imgPicks" src="/images/DSC_0614 (1).JPG" onclick="setImage(this)" />
+        </div>
     </div>
-</div>
     <script src="app.js"></script>
 </body>
 
