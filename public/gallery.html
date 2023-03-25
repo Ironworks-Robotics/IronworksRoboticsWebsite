@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironworks Robotics</title>
+    <link rel="stylesheet" href="/contents/navbar.css">
+    <link rel="stylesheet" href="/contents/pageCards.css">
+    <link rel="stylesheet" href="/contents/footer.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <style>        
+        .imgPicker{
+            width: 100%;
+            font-size: 0;
+            text-align: center;
+        }
+        .imgPicker img{
+            width: 12vw;
+            display: none;
+            cursor: pointer;
+            filter: brightness(0.5); /*change javascript with this*/
+        }
+        .guideArrows{
+            position: relative;
+        }
+        /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.5vw; /* 0.75 the font size*/
+    padding: 0vw 2vw; /*no top padding*/
+    color: white;
+    font-weight: bold;
+    font-size: 6vw;
+    transition: 0.1s ease;
+    z-index: 10;
+}
+
+
+.next {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero{
+    text-align: center;
+}
+
+.fullgallery{
+    width: 60vw;
+    margin: auto;
+}
+
+    </style>
+    <script defer src="/scripts/slidegallery.js"></script>
+</head>
+
+<body>
+
+    <!-- Nav Bar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html">
+                <img src="/images/name.png" alt="pic" id="main__img2" width="300">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">
+                        home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">
+                        about
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/sponsors.html" class="navbar__links">
+                        sponsors
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__links">
+                        media
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/resources.html" class="navbar__links">
+                        resources
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">
+                        contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Moved nav js to nav.js inside of scripts folder. Use this across site to access nav-->
+    <script type="text/javascript" src="public/scripts/nav.js"></script>
+    <div class = "fullgallery">
+    <!-- Hero Section -->
+    <div class="hero guideArrows">
+        <a class="prev" onclick="changeSlides(-1)">❮</a>
+        <a class="next" onclick="changeSlides(1)">❯</a>
+        <img src="/images/DSC_0066.JPG" alt="" width="100%" id="heroImage"/>
+    </div>
+
+    <!-- Image Picker -->
+    <div class = "imgPicker guideArrows">
+        <a class="prev" onclick="scrollImages(-1)">❮</a>
+        <a class="next" onclick="scrollImages(1)">❯</a>
+        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0066.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0136.JPG" onclick="setImage(this)"/>
+        <img class = "imgPicks" src = "/images/DSC_0614 (1).JPG" onclick="setImage(this)"/>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
