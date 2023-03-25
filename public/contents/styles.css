@@ -9,9 +9,13 @@ body{
 }
 
 
+div.clear {
+    clear: both;
+}
+/*
 
 
-/* Hero Section CSS */
+
 
 .main {
     background-color: #fff;
@@ -288,7 +292,7 @@ body{
     background-image: url("/images/DSC_0614 (1).JPG")
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive 
 @media screen and (max-width: 768px) {
     .main__container {
         display: grid;
@@ -401,7 +405,7 @@ body{
     }
 }
 
-/* about Section CSS */
+/* about Section CSS *
 .about {
     background: #fff;
     display: flex;
@@ -523,7 +527,7 @@ body{
     }
 }
 
-/* Footer CSS */
+/* Footer CSS *
 .footer__container {
     background-color: #141414;
     margin-top: 100px;
@@ -583,7 +587,7 @@ body{
     transition: 0.3s ease-out;
 }
 
-/* Social Icons */
+/* Social Icons *
 .social__icon--link {
     max-width: 1000px;
     width: 100%;
@@ -657,7 +661,7 @@ body{
     box-sizing: border-box
 }
 
-/* Slideshow container */
+/* Slideshow container *
 .slideshow-container {
     max-width: 1132px;
     position: relative;
@@ -665,7 +669,7 @@ body{
     padding-top: 10px;
 }
 
-/* Hide the /images by default */
+/* Hide the /images by default *
 .mySlides {
     display: none;
 }
@@ -676,7 +680,7 @@ body{
     object-fit: cover;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons *
 .prev,
 .next {
     cursor: pointer;
@@ -693,19 +697,19 @@ body{
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right *
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through *
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
+/* Caption text *
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -716,7 +720,7 @@ body{
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/3 etc) *
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -725,7 +729,7 @@ body{
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators *
 .dot {
     cursor: pointer;
     height: 15px;
@@ -742,7 +746,7 @@ body{
     background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation *
 .slide {
     animation-name: slide;
     animation-duration: 1.5s;
@@ -776,8 +780,4 @@ body{
     100% {
         background-position: 0 0;
     }
-}
-
-div.clear {
-    clear: both;
 }
