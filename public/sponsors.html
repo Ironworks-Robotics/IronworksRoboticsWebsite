@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ironworks Robotics</title>
-    <link   rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/contents/navbar.css">
+    <link rel="stylesheet" href="/contents/pageCards.css">
+    <link rel="stylesheet" href="/contents/footer.css">
 </head>
-<body>
 
+<body>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" style="margin: 0.5vw 0vw;">
             <a class="navbar-brand" href="/index.html" style="margin-left: 5em;">
@@ -44,86 +47,72 @@
                 </ul>
             </div>
     </nav>
-	
-    <!-- Moved nav js to nav.js inside of scripts folder. Use this across site to access nav-->
-    <script type="text/javascript" src="public/scripts/nav.js"></script>
-
-      <!-- Hero Section -->
-	<div class="trans">
-		<h1 href="/">sponsors</h1>
-	</div>
-	
-    <div class="main">
-		<div class="main__content">
-		<h3 href="/">Gold Sponsor</h3>
-		<h7 href="/">Alexander Mackenzie High School</h7>
-		<p href="/">Alexander Mackenzie High School is a public high school located in Richmond Hill, Ontario, Canada. With programs such as the International Baccalaureate and Arts programs, Alexander Mackenzie High School is an inclusive and welcoming environment for all students.</p>
-			<h4 href="/">Gold Sponsor</h4>
-		<h7 href="/">Humber College</h7>
-		<p href="/">The Humber College Institute of Technology and Advanced Learning was founded in 1967. Humber College is located in Toronto, Ontario, Canada. Humber emphasizes hands-on, career-focused learning. We offer a broad range of credentials including bachelor's degrees, diplomas, certificates and Ontario graduate certificates — and will help you chart the best path towards your goals.</p>
-			<h10 href="/">Silver Sponsor</h10>
-		<h7 href="/">Humber College</h7>
-		<p href="/">The Humber College Institute of Technology and Advanced Learning was founded in 1967. Humber College is located in Toronto, Ontario, Canada. Humber emphasizes hands-on, career-focused learning. We offer a broad range of credentials including bachelor's degrees, diplomas, certificates and Ontario graduate certificates — and will help you chart the best path towards your goals.</p>
-		
-	    	
-		</div>
+    <h1 style="margin-left: 5vw;">Sponsors</h1>
+    <div class="pageCards">
+        <div class="trippleColCard">
+            <h2>
+                Gold Sponsors
+            </h2>
+            <div>
+                <img src="/images/DSC_0136.JPG">
+                <h3>Alexander Mackenzie High School</h3>
+                <p>Alexander Mackenzie High School is a public high school located in Richmond Hill, Ontario, Canada.
+                    With programs such as the International Baccalaureate and Arts programs, Alexander Mackenzie High
+                    School is an inclusive and welcoming environment for all students.</p>
+            </div>
+            <div>
+                <img src="/images/DSC_0136.JPG">
+                <h3>Humber College</h3>
+                <p>The Humber College Institute of Technology and Advanced Learning was founded in 1967. Humber College
+                    is located in Toronto, Ontario, Canada. Humber emphasizes hands-on, career-focused learning. We
+                    offer a broad range of credentials including bachelor's degrees, diplomas, certificates and Ontario
+                    graduate certificates — and will help you chart the best path towards your goals.</p>
+            </div>
+        </div>
+        <div class="cardCol">
+            <img src="/images/DSC_0136.JPG">
+            <h2>
+                You Should Sponsor Us!
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima explicabo hic ex, eveniet dolorem animi praesentium assumenda neque. Aliquam dolore temporibus tempora animi asperiores incidunt beatae molestiae fugiat! Tenetur, perspiciatis.
+            </p>
+        </div>
     </div>
-
 
     <!-- Footer Section -->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2 href="/">About Us</h2>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Contact Us</h2>
-                    <a href="/">item 1</a>
-                    <a href="/">item 2</a>
-                    <a href="/">item 3</a>
-                    <a href="/">item 4</a>
-                    <a href="/">item 5</a>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Videos</h2>
-                    <a href="/">item 1</a>
-                    <a href="/">item 2</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2> Us</h2>
-                    <a href="/">item 1</a>
-                    <a href="/">item 2</a>
-                </div>
-            </div>
+    <div class="footer">
+        <div>
+            <p>
+                © Copywrite<br />
+                Ironworks Robotics
+                <br /><br />
+                All rights reserved.
+            </p>
         </div>
-        <div class="social__media">
-            <div class="social__media--wrap">
-                <!-- <div class="footer__logo">
-                    <a href="/" id="footer__logo">
-                    <img src="images/name.png" alt="pic" id="main__img"></a>
-                </div> -->
-                <p class="website__rights">© Copywrite Ironworks Robotics 2023. <br />All rights reserved.</p>
-                <div class="social__icons">
-                    <a href="/" class="social__icon__link" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="/" class="social__icon__link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="/" class="social__icon__link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="/" class="social__icon__link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+        <div>
+            <p>
+                300 Major MacKenzie Dr W, Richmond Hil, On L4C 3S3, Canada
+            </p>
+            <br />
+            <a href="https://www.instagram.com/frc.7690/" target="_blank" rel="noopener noreferrer">
+                <svg width="50" height="50" viewBox="-100.77 -167.95 873.32 1007.7" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#f0ead6">
+                        <path
+                            d="m335.9 0c-91.224 0-102.66 0.387-138.49 2.021-35.752 1.631-60.169 7.31-81.535 15.612-22.088 8.584-40.82 20.07-59.493 38.743-18.674 18.673-30.16 37.407-38.743 59.495-8.304 21.365-13.981 45.782-15.614 81.534-1.634 35.827-2.02 47.266-2.02 138.49 0 91.222 0.386 102.66 2.02 138.49 1.633 35.752 7.31 60.169 15.614 81.534 8.584 22.088 20.07 40.82 38.743 59.495 18.674 18.673 37.405 30.159 59.493 38.743 21.366 8.302 45.783 13.98 81.535 15.612 35.827 1.634 47.266 2.021 138.49 2.021 91.222 0 102.66-0.387 138.49-2.021 35.752-1.631 60.169-7.31 81.534-15.612 22.088-8.584 40.82-20.07 59.495-38.743 18.673-18.675 30.159-37.407 38.743-59.495 8.302-21.365 13.981-45.782 15.612-81.534 1.634-35.827 2.021-47.266 2.021-138.49 0-91.224-0.387-102.66-2.021-138.49-1.631-35.752-7.31-60.169-15.612-81.534-8.584-22.088-20.07-40.822-38.743-59.495-18.675-18.673-37.407-30.159-59.495-38.743-21.365-8.302-45.782-13.981-81.534-15.612-35.827-1.634-47.266-2.021-138.49-2.021zm0 60.521c89.686 0 100.31 0.343 135.73 1.959 32.75 1.493 50.535 6.965 62.37 11.565 15.68 6.094 26.869 13.372 38.622 25.126 11.755 11.754 19.033 22.944 25.127 38.622 4.6 11.836 10.072 29.622 11.565 62.371 1.616 35.419 1.959 46.043 1.959 135.73s-0.343 100.31-1.959 135.73c-1.493 32.75-6.965 50.535-11.565 62.37-6.094 15.68-13.372 26.869-25.127 38.622-11.753 11.755-22.943 19.033-38.621 25.127-11.836 4.6-29.622 10.072-62.371 11.565-35.413 1.616-46.036 1.959-135.73 1.959s-100.32-0.343-135.73-1.96c-32.75-1.492-50.535-6.964-62.37-11.564-15.68-6.094-26.869-13.372-38.622-25.127-11.754-11.753-19.033-22.943-25.127-38.621-4.6-11.836-10.071-29.622-11.565-62.371-1.616-35.419-1.959-46.043-1.959-135.73s0.343-100.31 1.959-135.73c1.494-32.75 6.965-50.535 11.565-62.37 6.094-15.68 13.373-26.869 25.126-38.622 11.754-11.755 22.944-19.033 38.622-25.127 11.836-4.6 29.622-10.072 62.371-11.565 35.419-1.616 46.043-1.959 135.73-1.959" />
+                        <path
+                            d="m335.9 447.86c-61.838 0-111.97-50.128-111.97-111.96 0-61.838 50.128-111.97 111.97-111.97 61.836 0 111.96 50.128 111.96 111.97 0 61.836-50.128 111.96-111.96 111.96zm0-284.45c-95.263 0-172.49 77.224-172.49 172.49 0 95.261 77.224 172.48 172.49 172.48 95.261 0 172.48-77.224 172.48-172.48 0-95.263-77.224-172.49-172.48-172.49m219.61-6.815c0 22.262-18.047 40.307-40.308 40.307-22.26 0-40.307-18.045-40.307-40.307 0-22.261 18.047-40.308 40.307-40.308 22.261 0 40.308 18.047 40.308 40.308" />
+                    </g>
+                </svg>
+            </a>
+            <br /> <br />
+            <a href="mailto:ironworksrobotics@gmail.com">
+                <p>
+                    ironworksrobotics<wbr>@gmail.com
+                </p>
+            </a>
         </div>
     </div>
-
-    <script src="app.js"></script>
 </body>
+
 </html>

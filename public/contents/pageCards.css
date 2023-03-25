@@ -52,7 +52,13 @@
 }
 .trippleColCard div{
     width: 30%;
-    display: inline-block;
+    display: inline-grid;
+}
+@media (max-width: 992px) {
+    .trippleColCard div{
+        display: block;
+        margin: auto;
+    }
 }
 .trippleColCard img{
     width: 100%;
