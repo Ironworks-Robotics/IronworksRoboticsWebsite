@@ -2,8 +2,17 @@
 
 .nav-item{
     margin-right: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
+.navbar-brand svg{
+    width: 10em;
+}
+@media (max-width:480px) {
+    .navbar-brand svg{
+        width: 7.5em;
+    }
+}
+
 .nav-item:last-child{
     margin-right: 5em;
 }
