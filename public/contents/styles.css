@@ -44,7 +44,97 @@ div.clear {
     height: auto;
     padding: 0 0px;
 }
+*/
 
+:root {  
+    --lightblue: rgb(201, 218, 248);
+    --darkblue: rgb(109, 158, 235);
+    --gray: rgb(183, 183, 183);
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 > .gradient {
+    display: inline-block;
+    position: relative;
+  }
+  
+  h1 > .gradient > .gradient-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+  }
+  
+  h1 > .gradient > .gradient-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  h1 > .gradient > .gradient-star > svg > path {
+    fill: var(--darkblue);
+  }
+  
+  h1 > .gradient > .gradient-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--lightblue),
+      var(--darkblue),
+      var(--gray),
+      var(--lightblue)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+
+/*
 .main__content h1 {
     font-size: 4rem;
     background-color: #000000;
