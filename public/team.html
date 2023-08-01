@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironworks Robotics</title>
+    <meta name="author" content="Ironworks Robotics | 7690">
+    <meta name="title" content = "Our Team | Ironworks Robotics">
+    <meta name="url" content="https://ironworksrobotics.com/team">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/contents/styles.css">
+    <link rel="stylesheet" href="/contents/navbar.css">
+    <link rel="stylesheet" href="/contents/footer.css">
+    <link rel="stylesheet" href="/contents/pageCards.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <style>
+        .ourteam {
+            background-color: #F2F3F5;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    
+        .ourteam h1 {
+            font-size: 3em;
+        }
+    
+        .ourteam h2 {
+            font-size: 2.5rem;
+        }
+    
+        .ourTeamMain {
+            font-size: 2rem;
+        }
+    
+        .ourteam > div {
+            display: inline-table;
+            margin: 2vw 10vw;
+        }
+    
+        .ourteam ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .ourteam li {
+            display: block;
+        }
+    
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .team-members li {
+            list-style: none;
+            margin: 10px;
+            text-align: center;
+        }
+    
+        .member-image {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+    
+        .member-image img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .member-name {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="margin: 0.5vw 0vw;">
+            <a class="navbar-brand" href="/index.html" style="margin-left: 5em;">
+                <svg version="1.0" viewBox="0 0 3040 532" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M58.3 71.2c.3 8.4 1.2 18.6 2.1 22.5 7.4 34.1 34.1 62.1 68.6 71.9 6.3 1.8 17.8 1.9 309.9 2.2l303.4.2-.6-10.7c-1.3-24.1-10.8-43.8-29.8-61.8-16.8-15.9-38.3-27.7-61.1-33.6-22.1-5.6.4-5.2-308.7-5.6L57.7 56l.6 15.2zM930.5 56.7c-38.2 3.1-69.7 16.8-94.1 40.7-18.8 18.5-28.4 39.7-28.4 62.6v8l303.8-.3c290.2-.2 304-.3 309.7-2 30.8-9.4 55.9-33.5 65.3-62.7 3.3-10.2 4.2-17.3 4.2-32.7V56l-278.2.2c-153.1.1-280.1.3-282.3.5zM1662 58.1c-34.3 4-65 17.5-84.5 37.3-8.7 8.8-13.9 16.5-18.4 27.4-4.8 11.6-8 27.4-8.1 39.4v5.8h684v-6.8c0-33-11.1-59.6-31.5-76.1-12.1-9.7-31-18.3-49.8-22.6-22.5-5.2-9.3-4.9-255.7-5.1-125.7-.1-231.9.2-236 .7zM2413 58.1c-39 4.5-74.2 22.6-95.4 49.1-12.1 15.1-18.1 30.8-19.3 50.5l-.6 10.3H2982v-6.3c0-16.4-5.8-34.8-15.3-48.6-5.1-7.5-16.7-19-26.7-26.5-20.8-15.6-45.9-25.3-74.5-28.6-11.1-1.2-441.4-1.2-452.5.1zM633.2 349.2l.3 128.3 7 .3c3.9.2 11.4-.2 16.7-.8 24.2-2.8 41.7-11.6 58.8-29.7 12-12.7 19.1-25.4 23.7-42.4 1.5-5.8 1.7-15.1 2-95.2l.4-88.7H633l.2 128.2zM808 302.7c0 49.3.4 84.6 1 88.8 7 48.8 37.7 74.7 99.7 84.2 9.7 1.5 32.4 1.7 228.8 2.1 150.5.2 222.5 0 232.5-.8 24.4-1.8 44.7-6.9 63.5-16 30.3-14.7 46.5-33.9 54.7-64.6 2.3-8.7 2.3-9.9 2.3-54.4 0-44.1-.1-45.8-2.3-54.4-1.2-5-4.2-13.1-6.6-18-11.2-23.8-30.2-36.6-67.1-45.4l-11-2.6-297.7-.3L808 221v81.7zm570.8 39.5.2 23.8H945v-23.3c0-12.9.3-23.7.7-24 .3-.4 97.9-.6 216.7-.5l216.1.3.3 23.7zM1552 226.2c0 2.9.7 9.3 1.5 14.1 7.4 41.9 33.3 62.9 89.5 72.4 9.8 1.6 25.8 1.8 246.9 2l236.3.3-.6 3.3c-2.5 12.6-27.1 31.7-50.4 39.1-18.6 5.8-8.7 5.6-229.2 5.6-140.9 0-205.2.3-211.5 1.1-11.3 1.4-22.9 5-32.3 10-21.1 11.3-39 31.9-46 53.2-4.2 12.5-5.2 19.7-5.2 36.5V478l283.8-.3 283.7-.3 11.4-2.2c49.7-9.6 89.6-40.2 101-77.5 3.6-11.7 4.1-25.2 4.1-102.5V221h-683v5.2zM2298.2 303.7c.3 81.2.4 82.9 2.5 90.4 6.4 22.8 21.7 42.5 44.7 58 17.1 11.5 36.3 19.1 59 23.2l12.1 2.2h447l12.4-2.3c14.1-2.5 32.5-8.4 42.8-13.5 26.5-13.4 48.8-35.8 57.2-57.7 6-15.4 6.1-17.4 6.1-104.1V221h-107.9l-.3 46.3-.3 46.2-3.4 7c-8.2 16.8-31.2 32.5-58.3 39.7l-8.3 2.3-158.5.3c-108.1.2-161.1-.1-166.7-.8-12.7-1.6-22.9-4.7-33.9-10-17-8.2-28.8-19-34.6-31.6-2.3-4.9-2.3-5.3-2.6-52.2l-.3-47.2h-109l.3 82.7z"
+                        fill="#00118a" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsing-navbar"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsing-navbar">
+                <ul class="navbar-nav ms-auto mb-10 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    
+        <!-- Team -->
+        <div class="ourteam">
+            <h2><u>Team of 2023</u></h2>
+            <div class="ourTeamMain">
+                <h2>Mentors</h2>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="T.Belch">
+                        </div>
+                        <div class="member-name">T.Belch</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="A. Capelet">
+                        </div>
+                        <div class="member-name">A. Capelet</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="G. Gabriele">
+                        </div>
+                        <div class="member-name">G. Gabriele</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="J. Prickaerts">
+                        </div>
+                        <div class="member-name">J. Prickaerts</div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="ourTeamMain">
+                <h2>Team Captains</h2>
+                <ul class="team-members">
+                    <!--
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Lauren Kim">
+                        </div>
+                        <div class="member-name">Lauren Kim</div>
+                    </li>
+                    -->
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Sanjay Mohanakumar">
+                        </div>
+                        <div class="member-name">Sanjay Mohanakumar</div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="subcategory">
+                <h2>Build</h2>
+                <h3>Leads</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Noah Block.png" alt="Noah Block">
+                        </div>
+                        <div class="member-name">Noah Block</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Isa Ladha">
+                        </div>
+                        <div class="member-name">Isa Ladha</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Michael Lander.jpg" alt="Michael Lander">
+                        </div>
+                        <div class="member-name">Michael Lander</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Li Shi">
+                        </div>
+                        <div class="member-name">Li Shi</div>
+                    </li>
+                </ul>
+                <br>
+                <h3>Members</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Vladimir Kolesov.jpeg" alt="Vladimir Kolesov">
+                        </div>
+                        <div class="member-name">Vladimir Kolesov</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Ashlin Lo">
+                        </div>
+                        <div class="member-name">Ashlin Lo</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Alex Park">
+                        </div>
+                        <div class="member-name">Alex Park</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Huston Persaud.png" alt="Huston Persaud">
+                        </div>
+                        <div class="member-name">Huston Persaud</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Joel Titcheu">
+                        </div>
+                        <div class="member-name">Joel Titcheu</div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="subcategory">
+                <h2>Programming</h2>
+                <h3>Leads</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Nicholas Afonin">
+                        </div>
+                        <div class="member-name">Nicholas Afonin</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Stefan Constantinescu.jpg" alt="Stefan Constantinescu">
+                        </div>
+                        <div class="member-name">Stefan Constantinescu</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Nathan Janit.jpg" alt="Nathan Janit">
+                        </div>
+                        <div class="member-name">Nathan Janit</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Harry Li">
+                        </div>
+                        <div class="member-name">Harry Li</div>
+                    </li>
+                </ul>
+                <br>
+                <h3>Members</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Edward Drobnis">
+                        </div>
+                        <div class="member-name">Edward Drobnis</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Wayne Huang">
+                        </div>
+                        <div class="member-name">Wayne Huang</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="David Shen">
+                        </div>
+                        <div class="member-name">David Shen</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subcategory">
+                <h2>Electrical/Pneumatics</h2>
+                <h3>Leads</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Michael Lander.jpg" alt="Michael Lander">
+                        </div>
+                        <div class="member-name">Michael Lander</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Li Shi">
+                        </div>
+                        <div class="member-name">Li Shi</div>
+                    </li>
+                </ul>
+                <br>
+                <h3>Members</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Joel Titcheu">
+                        </div>
+                        <div class="member-name">Joel Titcheu</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subcategory">
+                <h2>Marketing</h2>
+                <h3>Leads</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Roxanne Cheung.JPG" alt="Roxanne Cheung">
+                        </div>
+                        <div class="member-name">Roxanne Cheung</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Hana Kim.jpeg" alt="Hana Kim">
+                        </div>
+                        <div class="member-name">Hana Kim</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/Patricia Li.png" alt="Patricia Li">
+                        </div>
+                        <div class="member-name">Patricia Li</div>
+                    </li>
+                </ul>
+                <br>
+                <h3>Members</h3>
+                <ul class="team-members">
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Edward Drobnis">
+                        </div>
+                        <div class="member-name">Edward Drobnis</div>
+                    </li>
+                    <li>
+                        <div class="member-image">
+                            <img src="./images/team/IronworksRobotics.png" alt="Ashlin Lo">
+                        </div>
+                        <div class="member-name">Ashlin Lo</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="footer">
+            <div>
+                <p>
+                    © Copyright<br />
+                    Ironworks Robotics
+                    <br /><br />
+                    All rights reserved.
+                </p>
+            </div>
+            <div>
+                <p>
+                    300 Major Mackenzie Dr W, Richmond Hill, On L4C 3S3, Canada
+                </p>
+                <br />
+                <a href="https://www.instagram.com/frc.7690/" target="_blank" rel="noopener noreferrer">
+                    <svg width="50" height="50" viewBox="-100.77 -167.95 873.32 1007.7" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#f0ead6">
+                            <path
+                                d="m335.9 0c-91.224 0-102.66 0.387-138.49 2.021-35.752 1.631-60.169 7.31-81.535 15.612-22.088 8.584-40.82 20.07-59.493 38.743-18.674 18.673-30.16 37.407-38.743 59.495-8.304 21.365-13.981 45.782-15.614 81.534-1.634 35.827-2.02 47.266-2.02 138.49 0 91.222 0.386 102.66 2.02 138.49 1.633 35.752 7.31 60.169 15.614 81.534 8.584 22.088 20.07 40.82 38.743 59.495 18.674 18.673 37.405 30.159 59.493 38.743 21.366 8.302 45.783 13.98 81.535 15.612 35.827 1.634 47.266 2.021 138.49 2.021 91.222 0 102.66-0.387 138.49-2.021 35.752-1.631 60.169-7.31 81.534-15.612 22.088-8.584 40.82-20.07 59.495-38.743 18.673-18.675 30.159-37.407 38.743-59.495 8.302-21.365 13.981-45.782 15.612-81.534 1.634-35.827 2.021-47.266 2.021-138.49 0-91.224-0.387-102.66-2.021-138.49-1.631-35.752-7.31-60.169-15.612-81.534-8.584-22.088-20.07-40.822-38.743-59.495-18.675-18.673-37.407-30.159-59.495-38.743-21.365-8.302-45.782-13.981-81.534-15.612-35.827-1.634-47.266-2.021-138.49-2.021zm0 60.521c89.686 0 100.31 0.343 135.73 1.959 32.75 1.493 50.535 6.965 62.37 11.565 15.68 6.094 26.869 13.372 38.622 25.126 11.755 11.754 19.033 22.944 25.127 38.622 4.6 11.836 10.072 29.622 11.565 62.371 1.616 35.419 1.959 46.043 1.959 135.73s-0.343 100.31-1.959 135.73c-1.493 32.75-6.965 50.535-11.565 62.37-6.094 15.68-13.372 26.869-25.127 38.622-11.753 11.755-22.943 19.033-38.621 25.127-11.836 4.6-29.622 10.072-62.371 11.565-35.413 1.616-46.036 1.959-135.73 1.959s-100.32-0.343-135.73-1.96c-32.75-1.492-50.535-6.964-62.37-11.564-15.68-6.094-26.869-13.372-38.622-25.127-11.754-11.753-19.033-22.943-25.127-38.621-4.6-11.836-10.071-29.622-11.565-62.371-1.616-35.419-1.959-46.043-1.959-135.73s0.343-100.31 1.959-135.73c1.494-32.75 6.965-50.535 11.565-62.37 6.094-15.68 13.373-26.869 25.126-38.622 11.754-11.755 22.944-19.033 38.622-25.127 11.836-4.6 29.622-10.072 62.371-11.565 35.419-1.616 46.043-1.959 135.73-1.959" />
+                            <path
+                                d="m335.9 447.86c-61.838 0-111.97-50.128-111.97-111.96 0-61.838 50.128-111.97 111.97-111.97 61.836 0 111.96 50.128 111.96 111.97 0 61.836-50.128 111.96-111.96 111.96zm0-284.45c-95.263 0-172.49 77.224-172.49 172.49 0 95.261 77.224 172.48 172.49 172.48 95.261 0 172.48-77.224 172.48-172.48 0-95.263-77.224-172.49-172.48-172.49m219.61-6.815c0 22.262-18.047 40.307-40.308 40.307-22.26 0-40.307-18.045-40.307-40.307 0-22.261 18.047-40.308 40.307-40.308 22.261 0 40.308 18.047 40.308 40.308" />
+                        </g>
+                    </svg>
+                </a>
+                <br /> <br />
+                <a href="mailto:ironworksrobotics@gmail.com">
+                    <p>
+                        ironworksrobotics<wbr>@gmail.com
+                    </p>
+                </a>
+            </div>
+        </div>
+    </body>
+    
+    </html>
+    
